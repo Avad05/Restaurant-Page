@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding:0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Rubik+Gemstones&display=swap');
+body{
+    background-color: black;
+    background-image: url("blur-coffee-cafe-shop-restaurant-with-bokeh-background-xd.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+:root{
+    --footer-height: 70px;
+    --header-height:120px;
+    --content-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+header{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    font-size: xx-large;
+    backdrop-filter: blur(6px);
+    background-color: rgb(127, 255, 195);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    clip-path: polygon(
+    0 0, 100% 0,
+    100% 90%, 95% 100%,
+    90% 90%, 85% 100%,
+    80% 90%, 75% 100%,
+    70% 90%, 65% 100%,
+    60% 90%, 55% 100%,
+    50% 90%, 45% 100%,
+    40% 90%, 35% 100%,
+    30% 90%, 25% 100%,
+    20% 90%, 15% 100%,
+    10% 90%, 5% 100%,
+    0 90%
+  );
+    
+}
+
+nav>button{
+    height: 70px;
+    width: 100px;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgba(8, 4, 4, 0.7);
+  }
+  
+#content{
+    height: var(--content-height);
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 5px;
+    padding-top: 100px;
+}
+
+.food{
+    height: 450px;
+    border-radius: 90px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.food:hover{
+    transform: scale(1.05); /* slightly zooms in */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* gives it a lift */
+}
+
+.heading{
+    font-size: 80px;
+    font-family: "Playwrite IN", cursive;
+    color: #f5f5dc	;
+    width: 600px;
+}
+footer{
+    height: var(--footer-height);
+    color: black;
+    background-color:rgb(127, 255, 195) ;
+    font-size: x-large;
+    text-align: center;
+}
