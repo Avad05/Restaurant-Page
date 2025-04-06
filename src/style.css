@@ -2,6 +2,7 @@
     margin: 0;
     padding:0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Playwrite+IN:wght@100..400&family=Rubik+Gemstones&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Rubik+Gemstones&display=swap');
 body{
     background-color: black;
@@ -62,8 +63,11 @@ button:hover {
     display: flex;
     text-align: center;
     justify-content: space-around;
-    gap: 5px;
+    gap: 10px;
     padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .food{
@@ -89,5 +93,56 @@ footer{
     color: black;
     background-color:rgb(127, 255, 195) ;
     font-size: x-large;
+    padding-top: 15px;
     text-align: center;
+}
+
+/*.menuContain{
+    height:100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+
+}*/
+
+.breakFast{
+    background-color: #e6692b;
+    flex: 1;
+    border-radius: 30px;
+    font-size: 30px;
+
+}
+
+.Lunch{
+    flex: 1;
+    background-color: #f5f5dc;
+    border-radius: 30px;
+}
+.Dinner{
+    flex: 1;
+    background-color: #f5f5dc;
+    border-radius: 30px;
+}
+.menuItem{
+    font-size: 3rem;
+}
+.about{
+    height: 400px;
+    width: 380px;
+    font-size: 20px;
+    margin-top: 10px;
+    background-color: aquamarine;
+    padding: 30px;
+    font-family: "Playwrite IN", cursive;
+    clip-path: polygon(
+    0 10%, 5% 0, 10% 10%, 15% 0, 20% 10%, 25% 0, 
+    30% 10%, 35% 0, 40% 10%, 45% 0, 50% 10%, 
+    55% 0, 60% 10%, 65% 0, 70% 10%, 75% 0, 
+    80% 10%, 85% 0, 90% 10%, 95% 0, 100% 10%, 
+    100% 90%, 95% 100%, 90% 90%, 85% 100%, 
+    80% 90%, 75% 100%, 70% 90%, 65% 100%, 
+    60% 90%, 55% 100%, 50% 90%, 45% 100%, 
+    40% 90%, 35% 100%, 30% 90%, 25% 100%, 
+    20% 90%, 15% 100%, 10% 90%, 5% 100%, 0 90%
+  );
 }
